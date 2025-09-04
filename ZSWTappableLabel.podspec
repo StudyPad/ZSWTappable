@@ -13,7 +13,9 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '10.0'
   s.requires_arc = true
-  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64', 'ARCHS' => 'arm64' }
+  s.pod_target_xcconfig = { 'ARCHS[sdk=iphoneos*]' => 'arm64',
+    'ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+    'VALID_ARCHS' => 'arm64 x86_64' }
 
   s.ios.framework  = 'UIKit'
 
