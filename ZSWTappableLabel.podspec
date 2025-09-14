@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/zacwest/ZSWTappableLabel"
   s.license          = 'MIT'
   s.author           = { "Zachary West" => "zacwest@gmail.com" }
-  s.source           = { :git => "https://github.com/zacwest/ZSWTappableLabel.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/StudyPad/ZSWTappableLabel.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/zacwest'
 
   s.platform     = :ios, '10.0'
